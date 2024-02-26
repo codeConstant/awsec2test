@@ -9,4 +9,10 @@ public class ApiController {
     public String hello() {
         return "My first container ...";
     }
+
+
+    @GetMapping("hello2")
+    public String hello2() {
+        return "Hi Mahmudur ...";
+    }
 }

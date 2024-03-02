@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ApiController {
     @GetMapping("hello")
     public String hello() {
-        return "My first container ...";
+        return "My first runner ...";
     }
 
 

@@ -31,8 +31,8 @@ jobs:
       - name: Copy jar file to another directory
         run: sudo cp /home/ubuntu/actions-runner/_work/awsec2test/awsec2test/build/libs/deploy-0.0.1-SNAPSHOT.jar /home/ubuntu/artifact
 
-#      - name: Copy jar file to another directory
-#        run: sudo systemctl start artifact.service
+      - name: Finally Run the artifact service
+        run: sudo systemctl restart artifact.service
 
 #      - name: Run the artifact
 #        run:  sudo kill -9 'sudo lsof -t -i:20500' & sudo java -jar
